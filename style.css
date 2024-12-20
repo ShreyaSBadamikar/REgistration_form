@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #444;
+}
+
+/* Container Box */
+.container {
+    background: #ffffff; /* Pure white */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #9face6;
+    padding-bottom: 10px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #666;
+}
+
+/* Input and Select Styling */
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Input/Select Focus Effects */
+input:focus, select:focus {
+    border-color: #6a82fb;
+    box-shadow: 0 0 8px rgba(106, 130, 251, 0.4);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(90deg, #ee0979, #ff6a00);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling Form Validation (Optional) */
+input:invalid {
+    border-color: #ff4b5c;
+    background: rgba(255, 75, 92, 0.1);
+}
+
+input:valid {
+    border-color: #28a745;
+}
+
+/* Additional Styling for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
